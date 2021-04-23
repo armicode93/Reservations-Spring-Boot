@@ -2,12 +2,12 @@ package be.iccbxl.pid.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
-//import nz.net.ultraq.thymeleaf.LayoutDialec;
+import nz.net.ultraq.thymeleaf.LayoutDialect;
 
 @Configuration
 public class ThymeleafConfiguration {
-    // @Bean
-    //public LayoutDialect thymeleafDialect() { //probleme with LayoutDialect import
-        //return new LayoutDialect();
-     //}
+     @Bean
+    public LayoutDialect thymeleafDialect() {
+        return new LayoutDialect();
+     }
 }

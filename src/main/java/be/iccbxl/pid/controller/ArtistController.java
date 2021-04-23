@@ -10,8 +10,9 @@ import org.springframework.web.bind.annotation.GetMapping;
 
 import be.iccbxl.pid.model.Artist;
 import be.iccbxl.pid.model.ArtistService;
+import org.springframework.web.bind.annotation.RestController;
 
-@Controller
+@RestController
 public class ArtistController {
     @Autowired
     ArtistService service;
