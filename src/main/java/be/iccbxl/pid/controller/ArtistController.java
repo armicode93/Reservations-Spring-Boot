@@ -11,7 +11,7 @@ import be.iccbxl.pid.model.Artist;
 import be.iccbxl.pid.model.ArtistService;
 import org.springframework.web.bind.annotation.RestController;
 
-@RestController
+@Controller
 public class ArtistController {
     @Autowired
     ArtistService service;
