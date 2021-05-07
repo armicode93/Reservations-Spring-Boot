@@ -1,7 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr"
-      xmlns:layout="http://www.ultraq.net.mx/thymeleaf/layout"
-      xmlns:th="http://www.thymeleaf.org"
+<html lang="fr" xmlns:layout="http://www.ultraq.net.mx/thymeleaf/layout"
       layout:decorate="~{layouts/main}">
 <head>
     <title>Liste des artistes</title>
@@ -9,12 +7,8 @@
 <body>
 <div class="container">
     <div layout:fragment="content">
-
         <h1 th:text="${artist.firstname} +' '+ ${artist.lastname}">Bob Sull</h1>
-
-        <!-- <h1 th:text="|${artist.firstname} ${artist.lastname}|">Bob Sull</h1> # -->
-        <!-- // la barre vertical cest une concatenation,soit on fais avec le + soit avec la barre     -->
-
+        <h1 th:text="|${artist.firstname}  ${artist.lastname}|">Bob Sull</h1>
     </div>
 </div>
 </body>
