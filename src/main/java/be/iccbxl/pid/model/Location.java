@@ -77,9 +77,9 @@ public class Location {
     }
 
     public void setLocality(Locality locality) {
-        this.locality.removeLocation(this);	//déménager de l’ancienne localité
+        this.locality.removeLocation(this);
         this.locality = locality;
-        this.locality.addLocation(this);		//emménager dans la nouvelle localité
+        this.locality.addLocation(this);
     }
 
     public String getWebsite() {
