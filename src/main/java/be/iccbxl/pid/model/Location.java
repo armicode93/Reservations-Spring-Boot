@@ -24,6 +24,8 @@ public class Location {
     private String website;
     private String phone;
 
+    @OneToMany
+    private List<Show> shows = new ArrayList<>();
     public Location() { }
 
     public Location(String slug, String designation, String address, Locality locality, String website, String phone) {
@@ -103,6 +105,36 @@ public class Location {
         return "Location [id=" + id + ", slug=" + slug + ", designation=" + designation
                 + ", address=" + address	+ ", locality=" + locality + ", website="
                 + website + ", phone=" + phone + "]";
+    }
+    public List<Show> getShows() {
+        return shows;
+    }
+    public void setShows(List<Show> shows) {
+        this.shows = shows;
+    }
+    public Location addShow(Show show) {
+        if(!this.shows.contains(show)) {
+            this.shows.add(show);
+            show.setLocation(this);
+        }
+
+        return this;
+    }
+    public Location removeShow(Show show) {
+        if(this.shows.contains(show)) {
+            this.shows.remove(show);
+            if(show.getLocation().equals(this)) {
+                show.setLocation(null);
+            }
+        }
+
+        return this;
+    }
+    @Override
+    public String toString() {
+        return "Location [id=" + id + ", slug=" + slug + ", designation=" + designation
+                + ", address=" + address	+ ", locality=" + locality + ", website="
+                + website + ", phone=" + phone + ", shows=" + shows.size() + "]";
     }
 }
 
