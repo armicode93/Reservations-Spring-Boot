@@ -100,12 +100,12 @@ public class Location {
         this.phone = phone;
     }
 
-    @Override
-    public String toString() {
-        return "Location [id=" + id + ", slug=" + slug + ", designation=" + designation
-                + ", address=" + address	+ ", locality=" + locality + ", website="
-                + website + ", phone=" + phone + "]";
-    }
+     @Override
+     public String toString() {
+         return "Location [id=" + id + ", slug=" + slug + ", designation=" + designation
+                 + ", address=" + address	+ ", locality=" + locality + ", website="
+                 + website + ", phone=" + phone + "]";
+     }
     public List<Show> getShows() {
         return shows;
     }
@@ -136,5 +136,6 @@ public class Location {
                 + ", address=" + address	+ ", locality=" + locality + ", website="
                 + website + ", phone=" + phone + ", shows=" + shows.size() + "]";
     }
+
 }
 
