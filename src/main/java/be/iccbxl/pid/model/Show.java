@@ -26,7 +26,7 @@ public class Show {
      */
     @ManyToOne
     @JoinColumn(name="location_id", nullable=false)
-    private Location location;  //in realta nella table era location_id,siccome è l'id del location scrivero cosi
+    private Location location;
     private boolean bookable;
     private double price;
 
@@ -59,6 +59,10 @@ public class Show {
 
         this.createdAt = LocalDateTime.now();
         this.updatedAt = null;
+    }
+
+    public Long getId() {
+        return id;
     }
 
     public String getSlug() {
