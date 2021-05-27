@@ -31,6 +31,9 @@ public class Location {
     @OneToMany(targetEntity=Show.class, mappedBy="location")
     private List<Show> shows = new ArrayList<>();
 
+    @OneToMany(targetEntity=Representation.class, mappedBy="location")
+    private List<Representation> representations = new ArrayList<>();
+
 
     public Location() { }
 
