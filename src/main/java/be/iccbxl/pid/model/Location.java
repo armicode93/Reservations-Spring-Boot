@@ -30,6 +30,8 @@ public class Location {
 
     @OneToMany(targetEntity=Show.class, mappedBy="location")
     private List<Show> shows = new ArrayList<>();
+
+
     public Location() { }
 
     public Location(String slug, String designation, String address, Locality locality, String website, String phone) {
