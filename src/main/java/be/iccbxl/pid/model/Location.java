@@ -1,6 +1,7 @@
 package be.iccbxl.pid.model;
 
 import javax.persistence.*;
+import java.util.*;
 
 import com.github.slugify.Slugify;
 
