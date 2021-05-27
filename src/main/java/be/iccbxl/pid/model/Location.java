@@ -5,6 +5,9 @@ import java.util.*;
 
 import com.github.slugify.Slugify;
 
+import java.util.ArrayList;
+import java.util.List;
+
 @Entity
 @Table(name="locations")
 public class Location {
@@ -25,7 +28,7 @@ public class Location {
     private String website;
     private String phone;
 
-    @OneToMany
+    @OneToMany(targetEntity=Show.class, mappedBy="location")
     private List<Show> shows = new ArrayList<>();
     public Location() { }
 
@@ -101,12 +104,12 @@ public class Location {
         this.phone = phone;
     }
 
-    @Override
-    public String toString() {
-        return "Location [id=" + id + ", slug=" + slug + ", designation=" + designation
-                + ", address=" + address	+ ", locality=" + locality + ", website="
-                + website + ", phone=" + phone + "]";
-    }
+    /* @Override
+     public String toString() {
+         return "Location [id=" + id + ", slug=" + slug + ", designation=" + designation
+                 + ", address=" + address	+ ", locality=" + locality + ", website="
+                 + website + ", phone=" + phone + "]";
+     } */
     public List<Show> getShows() {
         return shows;
     }
@@ -137,5 +140,6 @@ public class Location {
                 + ", address=" + address	+ ", locality=" + locality + ", website="
                 + website + ", phone=" + phone + ", shows=" + shows.size() + "]";
     }
+
 }
 
