@@ -19,13 +19,17 @@ public class Show {
     private String title;
     private String description;
 
-    @Column(name="poster_url", nullable=true)
+    @Column(name="poster_url", nullable=false)
     private String posterUrl;
     /**
      * Lieu de création du spectacle
      */
     @ManyToOne
+
     @JoinColumn(name="location_id")
+
+    @JoinColumn(name="location_id", nullable=true)
+
     private Location location;
     private boolean bookable;
     private double price;
