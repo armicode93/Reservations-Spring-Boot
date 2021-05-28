@@ -25,7 +25,7 @@ public class Show {
      * Lieu de création du spectacle
      */
     @ManyToOne
-    @JoinColumn(name="location_id", nullable=false)
+    @JoinColumn(name="location_id", nullable=true)
     private Location location;
     private boolean bookable;
     private double price;
