@@ -14,6 +14,7 @@ public class Show {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
 
+
     @Column(unique = true)
     private String slug;
     private String title;
@@ -25,8 +26,6 @@ public class Show {
      * Lieu de création du spectacle
      */
     @ManyToOne
-
-    @JoinColumn(name="location_id")
 
     @JoinColumn(name="location_id", nullable=true)
 

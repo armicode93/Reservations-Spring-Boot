@@ -1,5 +1,5 @@
 CREATE TABLE `locations` (
-                             `id` int(11) NOT NULL AUTO_INCREMENT,
+                             `id` int(11) NOT NULL,
                              `slug` varchar(60) COLLATE utf8mb4_unicode_ci NOT NULL UNIQUE,
                              `designation` varchar(60) COLLATE utf8mb4_unicode_ci NOT NULL,
                              `address` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
