@@ -9,8 +9,7 @@ alimenter et véhiculer une crainte féroce envers les enfants âgés entre 10 e
 (3, 'ceci-nest-pas-un-chanteur-belge', 'Ceci n\'est pas un chanteur belge', 'Non peut-être ?!\nEntre
 Magritte (pour le surréalisme comique) et Maigret (pour le réalisme mélancolique), ce dixième opus
 semalien propose quatorze nouvelles chansons mêlées à de petits textes humoristiques et à quelques
-fortes images poétiques.','claudebelgesaison220.jpg', 1, '5.50', '2020-04-21 19:08:53.189000',
- '2020-04-21 19:08:53.189000', NULL),
+fortes images poétiques.','claudebelgesaison220.jpg', 1, '5.50', '2020-04-21 19:08:53.189000', NULL, 4),
 (4, 'manneke', 'Manneke… !', 'A tour de rôle, Pierre se joue de ses oncles, tantes, grands-parents et
 surtout de sa mère.', 'wayburn.jpg', 1, '10.50', '2020-04-21 19:09:02.426000', '2020-04-21
 19:09:02.426000', 3);
