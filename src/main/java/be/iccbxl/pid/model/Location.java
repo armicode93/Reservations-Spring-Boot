@@ -35,7 +35,7 @@ public class Location {
     private List<Representation> representations = new ArrayList<>();
 
 
-    public Location() { }
+    protected Location() { }
 
     public Location(String slug, String designation, String address, Locality locality, String website, String phone) {
         Slugify slg = new Slugify();

@@ -20,7 +20,7 @@ public class Show {
     private String title;
     private String description;
 
-    @Column(name="poster_url", nullable=false)
+    @Column(name="poster_url")
     private String posterUrl;
     /**
      * Lieu de création du spectacle
