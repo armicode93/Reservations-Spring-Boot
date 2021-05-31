@@ -1,6 +1,7 @@
 package be.iccbxl.pid.model;
 
 import javax.persistence.*;
+import java.util.*;
 
 import com.github.slugify.Slugify;
 
@@ -29,6 +30,11 @@ public class Location {
 
     @OneToMany(targetEntity=Show.class, mappedBy="location")
     private List<Show> shows = new ArrayList<>();
+
+    @OneToMany(targetEntity=Representation.class, mappedBy="location")
+    private List<Representation> representations = new ArrayList<>();
+
+
     public Location() { }
 
     public Location(String slug, String designation, String address, Locality locality, String website, String phone) {

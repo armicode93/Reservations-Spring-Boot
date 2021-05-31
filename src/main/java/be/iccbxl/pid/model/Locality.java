@@ -20,11 +20,15 @@ public class Locality {
     private List<Location> locations = new ArrayList<>();
 
 
-    public Locality() {	}
+    protected Locality() {	}
 
     public Locality(String postalCode, String locality) {
         this.postalCode = postalCode;
         this.locality = locality;
+    }
+
+    public List<Location> getLocations() {
+        return locations;
     }
 
     public Long getId() {
