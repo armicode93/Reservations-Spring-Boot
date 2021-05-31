@@ -1,6 +1,8 @@
 package be.iccbxl.pid.model;
 
 import java.time.LocalDateTime;
+import java.util.ArrayList;
+import java.util.List;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -21,7 +23,7 @@ public class Representation {
     private Long id;
 
     @ManyToOne
-    @JoinColumn(name="show_id", nullable=false)
+    @JoinColumn(name="show_id", nullable = false)
     private Show show;
 
     /**
@@ -71,6 +73,8 @@ public class Representation {
     public Long getId() {
         return id;
     }
+
+
 
     @Override
     public String toString() {
