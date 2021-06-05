@@ -8,7 +8,7 @@ import java.util.List;
 @Entity
 @Table(name="artist_type")
 
-public class ArtistType {
+public class ArtistType  {
 
     @Id
     @GeneratedValue(strategy= GenerationType.AUTO)
